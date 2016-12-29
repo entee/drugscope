@@ -1,0 +1,35 @@
+
+DROP  TABLE IF EXISTS FDAPACKAGE;
+CREATE TABLE FDAPACKAGE
+(
+   PRODUCTID          varchar(55) NOT NULL,
+   PRODUCTNDC         varchar(12),
+   NDCPACKAGECODE     varchar(15) NOT NULL,
+   PACKAGEDESCRIPTION varchar(4000) NOT NULL
+)
+;
+
+
+DROP  TABLE IF EXISTS FDAPRODUCT;
+CREATE TABLE FDAPRODUCT
+(
+   PRODUCTID                 varchar(55) NOT NULL,
+   PRODUCTNDC                varchar(12) NOT NULL,
+   PRODUCTTYPENAME           varchar(50) NOT NULL,
+   PROPRIETARYNAME           varchar(300) NOT NULL,
+   PROPRIETARYNAMESUFFIX     varchar(200) NOT NULL,
+   NONPROPRIETARYNAME        varchar(750) NOT NULL,
+   DOSAGEFORMNAME            varchar(100) NOT NULL,
+   ROUTENAME                 varchar(255) NOT NULL,
+   STARTMARKETINGDATE        varchar(10) NOT NULL,
+   ENDMARKETINGDATE          varchar(10) NOT NULL,
+   MARKETINGCATEGORYNAME     varchar(50) NOT NULL,
+   APPLICATIONNUMBER         varchar(15) NOT NULL,
+   LABELERNAME               varchar(150) NOT NULL,
+   SUBSTANCENAME             varchar(5000) NOT NULL,
+   ACTIVE_NUMERATOR_STRENGTH varchar(1500) NOT NULL,
+   ACTIVE_INGRED_UNIT        varchar(3000) NOT NULL,
+   PHARM_CLASSES             varchar(5000) NOT NULL,
+   DEASCHEDULE               varchar(10) NOT NULL
+)
+;
